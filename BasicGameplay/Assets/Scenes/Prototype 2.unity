@@ -469,7 +469,7 @@ Camera:
   near clip plane: 0.3
   far clip plane: 1000
   field of view: 45
-  orthographic: 0
+  orthographic: 1
   orthographic size: 10
   m_Depth: -1
   m_CullingMask:
@@ -501,6 +501,54 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
+--- !u!1 &543355350
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 543355352}
+  - component: {fileID: 543355351}
+  m_Layer: 0
+  m_Name: SpawnManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &543355351
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 543355350}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 18e92698c6ac3b34c83b10e42cf523db, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  animalPrefabs:
+  - {fileID: 4011173238149052989, guid: 932b04dbb49120c4685feb6312922ee6, type: 3}
+  - {fileID: 5546987652131301173, guid: 8a6d3d8d8629b8a48bf8142aaf68f017, type: 3}
+  - {fileID: 998577229105128694, guid: 5bf49493c508760429da8f438879fbc0, type: 3}
+--- !u!4 &543355352
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 543355350}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.045844078, y: 18.111593, z: 16.54146}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 8
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &780656494
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -779,11 +827,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 932b04dbb49120c4685feb6312922ee6, type: 3}
---- !u!1 &1404868761 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 2164530041311563446, guid: d56e3ea7099bad646a3f203bb3f96bb9, type: 3}
-  m_PrefabInstance: {fileID: 2164530041738610012}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1507349265 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5546987652131301173, guid: 8a6d3d8d8629b8a48bf8142aaf68f017, type: 3}
@@ -904,7 +947,7 @@ MonoBehaviour:
   horizontalInput: 1
   speed: 10
   xRange: 10
-  projectilePrefab: {fileID: 1404868761}
+  projectilePrefab: {fileID: 2164530041311563446, guid: d56e3ea7099bad646a3f203bb3f96bb9, type: 3}
 --- !u!1001 &2164530041738610012
 PrefabInstance:
   m_ObjectHideFlags: 0
